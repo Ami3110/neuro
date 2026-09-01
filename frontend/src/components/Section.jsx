@@ -9,7 +9,7 @@ export const Section = ({ id, overline, title, lead, children, testId, tone = "d
         : "py-20 sm:py-28"
     }
   >
-    <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+    <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       <div className="max-w-3xl">
         {overline && (
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{overline}</p>

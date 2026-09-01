@@ -11,7 +11,7 @@ const SERVICES = [
     num: "01",
     icon: Truck,
     title: "Mobile Therapy Fleet",
-    plain: "Therapy vans that come to your village instead of you travelling to a city hospital.",
+    plain: "Therapy vans that come to your place instead of you travelling to a city hospital.",
     body: "Fully equipped vans deliver occupational, speech and behavioural therapy at rural doorsteps on a fixed fortnightly route, so families do not lose a day's wage to reach care.",
     points: ["Occupational therapy", "Speech & language", "Behavioural support", "Fixed fortnightly routes"],
     span: "lg:col-span-8 lg:row-span-2",

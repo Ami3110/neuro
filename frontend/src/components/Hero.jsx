@@ -10,7 +10,7 @@ const FACTS = [
 
 export const Hero = () => (
   <section className="relative border-b border-border" aria-labelledby="hero-heading">
-    <div className="mx-auto grid max-w-7xl gap-16 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-10 lg:py-28">
+    <div className="w-full grid gap-16 px-4 py-20 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-12 lg:py-28 xl:px-16 2xl:px-20">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           Care · Research · Equity

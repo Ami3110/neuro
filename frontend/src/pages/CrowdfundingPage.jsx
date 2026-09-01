@@ -58,7 +58,7 @@ export default function CrowdfundingPage() {
       <SiteHeader />
       <main id="main">
         <section className="border-b border-border py-20 sm:py-24" aria-labelledby="cf-heading">
-          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Sponsor a child
             </p>
@@ -78,7 +78,7 @@ export default function CrowdfundingPage() {
         </section>
 
         <section className="py-20 sm:py-24" aria-label="Active campaigns">
-          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
             <div className="grid gap-6 lg:grid-cols-3" data-testid="campaigns-grid">
               {campaigns.map((c) => (
                 <Card

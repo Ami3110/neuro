@@ -25,7 +25,7 @@ export const SiteHeader = () => {
         data-testid="announcement-bar"
         className="relative z-50 bg-slate-900 text-slate-100 dark:bg-slate-950 border-b border-border/40 overflow-hidden"
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-10 text-xs">
+        <div className="w-full flex items-center justify-between px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-2 text-xs">
           <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/20 text-primary border border-primary/30 px-2.5 py-0.5 text-[11px] font-medium">
               <span className="relative flex h-1.5 w-1.5">
@@ -51,7 +51,7 @@ export const SiteHeader = () => {
 
       {/* Main Navigation Header */}
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 transition-colors duration-200">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-10">
+        <div className="w-full flex items-center justify-between gap-4 px-4 py-3 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           
           {/* Logo */}
           <Link

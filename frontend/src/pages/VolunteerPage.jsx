@@ -67,7 +67,7 @@ export default function VolunteerPage() {
       <SiteHeader />
       <main id="main">
         <section className="border-b border-border py-20 sm:py-24" aria-labelledby="vol-heading">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10">
+          <div className="w-full grid gap-12 px-4 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-12 xl:px-16 2xl:px-20">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Volunteer</p>
               <h1 id="vol-heading" className="mt-6 text-4xl font-light tracking-tight sm:text-5xl">
@@ -91,7 +91,7 @@ export default function VolunteerPage() {
         </section>
 
         <section className="py-20 sm:py-24" aria-labelledby="vol-form-heading">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:px-10">
+          <div className="w-full grid gap-12 px-4 sm:px-8 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:px-12 xl:px-16 2xl:px-20">
             <Card className="h-fit rounded-2xl border-border shadow-none">
               <CardContent className="p-8 sm:p-10">
                 <h2 id="vol-form-heading" className="text-2xl font-medium tracking-tight">

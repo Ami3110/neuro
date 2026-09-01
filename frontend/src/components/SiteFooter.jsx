@@ -10,7 +10,7 @@ const DIRECTORY = [
 
 export const SiteFooter = () => (
   <footer className="border-t border-border bg-slate-900 text-slate-200" data-testid="site-footer">
-    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+    <div className="w-full px-4 py-16 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">

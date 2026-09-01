@@ -57,7 +57,7 @@ export default function HomePage() {
             <ContactDesk />
           </>
         ) : (
-          <p className="mx-auto max-w-7xl px-6 py-24 text-sm text-muted-foreground lg:px-10" data-testid="home-loading">
+          <p className="w-full px-4 py-24 text-sm text-muted-foreground sm:px-8 lg:px-12 xl:px-16 2xl:px-20" data-testid="home-loading">
             Loading foundation content…
           </p>
         )}

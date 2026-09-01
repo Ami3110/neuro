@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 210 40% 98%;
+        --foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 176 62% 26%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 210 40% 96%;
+        --secondary-foreground: 222 47% 11%;
+        --muted: 210 40% 96%;
+        --muted-foreground: 215 25% 32%;
+        --accent: 243 60% 42%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 65% 40%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 214 32% 88%;
+        --input: 214 32% 88%;
+        --ring: 176 62% 32%;
+        --radius: 0.75rem;
+    }
+    .dark {
+        --background: 222 47% 11%;
+        --foreground: 210 40% 98%;
+        --card: 217 33% 17%;
+        --card-foreground: 210 40% 98%;
+        --popover: 217 33% 17%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 172 66% 60%;
+        --primary-foreground: 222 47% 9%;
+        --secondary: 217 33% 22%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217 33% 22%;
+        --muted-foreground: 215 25% 74%;
+        --accent: 234 89% 78%;
+        --accent-foreground: 222 47% 9%;
+        --destructive: 0 70% 60%;
+        --destructive-foreground: 222 47% 9%;
+        --border: 215 28% 30%;
+        --input: 215 28% 30%;
+        --ring: 172 66% 60%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+    }
+    body {
+        @apply bg-background text-foreground;
+        margin: 0;
+        font-family: 'IBM Plex Sans', ui-sans-serif, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .font-display {
+        font-family: 'Outfit', ui-sans-serif, sans-serif;
+    }
+    :focus-visible {
+        @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    }
+    ::selection {
+        @apply bg-primary text-primary-foreground;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
+
+.ndf-rule {
+    background-image: linear-gradient(90deg, hsl(var(--border)) 0 8px, transparent 8px 16px);
+    height: 1px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}

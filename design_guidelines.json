@@ -1,0 +1,137 @@
+{
+  "theme": "light_and_dark",
+  "typography": {
+    "fonts": {
+      "heading": "Outfit",
+      "body": "IBM Plex Sans"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-light",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm tracking-wide",
+      "overline": "text-xs uppercase tracking-[0.2em] font-semibold"
+    },
+    "guidelines": "Ensure strong distinction between heading and body fonts. The heading font (Outfit) brings institutional authority yet approachability, while the body font (IBM Plex Sans) provides maximum legibility for neurodiverse users."
+  },
+  "colors": {
+    "archetype": "Organic & Earthy + Soft Utility",
+    "light": {
+      "background": "bg-slate-50",
+      "foreground": "text-slate-900",
+      "primary": "bg-teal-700 text-white",
+      "primary_hover": "hover:bg-teal-800 hover:text-white",
+      "accent": "bg-indigo-700 text-white",
+      "surface": "bg-white",
+      "border": "border-slate-200"
+    },
+    "dark": {
+      "background": "bg-slate-900",
+      "foreground": "text-slate-50",
+      "primary": "bg-teal-500 text-slate-950",
+      "primary_hover": "hover:bg-teal-400 hover:text-slate-950",
+      "accent": "bg-indigo-400 text-slate-950",
+      "surface": "bg-slate-800",
+      "border": "border-slate-700"
+    },
+    "guidelines": "Strict adherence to WCAG 2.1 AAA high contrast. Avoid hyper-saturated, bright, or vibrating colors (no neon). Use deeper, earthy tones for Teal and Indigo in light mode to maintain calmness and high contrast. Backgrounds should be soft and matte."
+  },
+  "visual_enhancers": {
+    "surfaces": "Flat Solid (No Glassmorphism). Use warm, flat solid backgrounds with subtle 1px borders to prevent visual refraction and sensory overload.",
+    "shadows": "Minimal, soft ambient shadows only (shadow-sm or none). Avoid harsh or deep drop-shadows.",
+    "borders": "1px subtle borders (border-slate-200/border-slate-700) to ground elements clearly.",
+    "radius": "rounded-2xl for large cards, rounded-xl for interactive elements, pill-shaped (rounded-full) for primary CTAs."
+  },
+  "component_name": {
+    "cards": "shadcn/ui Card (Customized to be flat with 1px border)",
+    "tabs": "shadcn/ui Tabs (For Publications Hub)",
+    "dialog": "shadcn/ui Dialog (For Grant Proposal and CSR forms)",
+    "accordion": "shadcn/ui Accordion (For FAQs or dense topic summaries)",
+    "badge": "shadcn/ui Badge (For Publication categories and tagging)",
+    "toast": "sonner (For interactive feedback, CSR proposal submission)",
+    "progress": "shadcn/ui Progress (For Crowdfunding progress bars)",
+    "form": "shadcn/ui Form, Input, Textarea, Select"
+  },
+  "grids": {
+    "services_bento": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8. Create visual asymmetry. Mobile Clinic (col-span-full md:col-span-8 row-span-2), Maternal Protocol (col-span-4 row-span-1), Training Centers (col-span-4 row-span-1), Pediatric Rehab (col-span-full).",
+    "dashboard_data": "High density grid for CSR transparency metrics (grid-cols-1 md:grid-cols-4 gap-6)."
+  },
+  "layouts": {
+    "spacing_philosophy": "Generous Spacing. Use p-8, p-12 for containers, py-24 or py-32 for section vertical padding to reduce sensory clutter and cognitive load.",
+    "alignment": "Left-align dense text and paragraphs. Center-align hero headlines if balanced with structural asymmetry below.",
+    "header": "Solid or semi-solid (backdrop-blur-md ONLY if heavily tinted) background. Sticky z-50. Must always remain highly legible."
+  },
+  "motion": {
+    "philosophy": "ZERO AUTO-PLAYING MOTION. Strict adherence to neuro-accessibility.",
+    "interactions": "Use simple, predictable state changes. Transform scale (scale-105) on hover for cards, but ONLY if the user initiates it. Respect 'prefers-reduced-motion'.",
+    "transitions": "Use specific properties: 'transition-colors duration-200 ease-in-out' or 'transition-transform duration-200'."
+  },
+  "accessibility": {
+    "contrast": "WCAG 2.1 AAA. Ensure all text and interactive elements have at least 4.5:1 against their backgrounds (7:1 preferred for normal text).",
+    "keyboard": "Full keyboard navigability. Focus states must have HIGHER contrast (e.g., ring-2 ring-teal-500 ring-offset-2).",
+    "semantics": "Screen-reader semantic HTML (nav, main, section, article). Use aria-labels for icon-only buttons.",
+    "testing": "All interactive elements MUST include a 'data-testid' attribute (e.g., data-testid='csr-submit-button')."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1758598737547-666bce663667?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxjaGlsZCUyMG9jY3VwYXRpb25hbCUyMHRoZXJhcHklMjBzZW5zb3J5fGVufDB8fHx8MTc4Njk5ODM5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Mother and son building with colorful blocks. Calm, engaging therapy interaction.",
+        "category": "Hero Section / Pediatric Rehabilitation"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1708687045030-26702e62fc65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMG9jY3VwYXRpb25hbCUyMHRoZXJhcHklMjBzZW5zb3J5fGVufDB8fHx8MTc4Njk5ODM5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "A woman giving a boy a high five. Positive reinforcement.",
+        "category": "Crowdfunding / Volunteer Program"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6646916/pexels-photo-6646916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Group of volunteers providing aid outdoors. Community support.",
+        "category": "CSR & Institutional Funding Hub"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30483024/pexels-photo-30483024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Close-up of hands manipulating putty during therapy session.",
+        "category": "Core Services - Mobile Therapy Fleet / Free Resources"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1773140278162-fd7df1043f0c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbW9iaWxlJTIwY2xpbmljJTIwaGVhbHRofGVufDB8fHx8MTc4Njk5ODM5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Ambulance/Medical vehicle.",
+        "category": "Book Mobile Unit / Clinics"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758691463607-c1220b77aaaa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwbW9iaWxlJTIwY2xpbmljJTIwaGVhbHRofGVufDB8fHx8MTc4Njk5ODM5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Professional doctor/researcher.",
+        "category": "NeuroDevelopment Research Fund / Team Profiles"
+      }
+    ],
+    "guidelines": "Images must be used with transparent or solid background overlays (max bg-black/40) for text legibility. Never use placeholder URLs."
+  },
+  "3d_libraries": {
+    "status": "DISABLED",
+    "reasoning": "3D libraries, fast motion, or parallax are strictly disabled for this project to maintain strict neuro-accessibility (preventing vertigo, sensory overload, or distraction). Stick to high-quality 2D imagery and semantic typography."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette provided (Slate-900, Slate-50, Teal-600, Indigo-600) and map them intelligently to Light/Dark modes.",
+    "Do not implement generic Vercel/Stripe styles. Use Flat Solid surfaces with 1px subtle borders and generous padding to create a calm, institutional feel.",
+    "All forms (Research Grant, CSR Request, Contact) must use Shadcn form components, and include toast notifications via Sonner for success/error states.",
+    "Ensure 'data-testid' is present on EVERY button, tab, accordion trigger, and form input.",
+    "Provide a 'Light/Dark mode toggle' in the global header.",
+    "Implement the 'Publications Hub' as a filterable/searchable interface using Shadcn Tabs or custom filter logic.",
+    "For the 'Crowdfunding' section, utilize Shadcn Progress bars to show funding milestones for individual children.",
+    "Never use automatic carousels or marquees. All sliders/galleries must be manually controlled by the user."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Make creative, distinctive frontends that surprise and delight.",
+    "Create depth through layered design elements with z-index hierarchy, but avoid over-using shadows in this neuro-accessible context.",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific properties.",
+    "You MUST NOT center align the app container in CSS. Respect natural reading flows.",
+    "Always use modern button styles (pill-shaped or rounded-xl) with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters (🤖🧠💭💡) for icons. Use lucide-react.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap and cause cognitive overload.",
+    "Missing categories or images? Use the provided URLs only. NO PLACEHOLDER TEXT/IMAGES.",
+    "Use sonner for toasts, located at /app/src/components/ui/sonner.tsx or similar path depending on setup."
+  ]
+}
